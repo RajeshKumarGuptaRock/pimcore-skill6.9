@@ -60,6 +60,118 @@ return [
             "workspaces" => [
 
             ]
+        ],
+        "JP_channel2" => [
+            "general" => [
+                "active" => TRUE,
+                "type" => "dataImporterDataObject",
+                "name" => "JP_channel2",
+                "description" => "",
+                "path" => NULL
+            ],
+            "loaderConfig" => [
+                "type" => "upload",
+                "settings" => [
+                    "uploadFilePath" => "JP_channel2/upload.import"
+                ]
+            ],
+            "interpreterConfig" => [
+                "type" => "csv",
+                "settings" => [
+                    "skipFirstRow" => TRUE,
+                    "delimiter" => ",",
+                    "enclosure" => "\"",
+                    "escape" => "\\"
+                ]
+            ],
+            "resolverConfig" => [
+                "elementType" => "dataObject",
+                "dataObjectClassId" => "1",
+                "loadingStrategy" => [
+                    "type" => "notLoad"
+                ],
+                "createLocationStrategy" => [
+                    "type" => "staticPath",
+                    "settings" => [
+                        "path" => "/"
+                    ]
+                ],
+                "locationUpdateStrategy" => [
+                    "type" => "noChange"
+                ],
+                "publishingStrategy" => [
+                    "type" => "noChangeUnpublishNew"
+                ]
+            ],
+            "processingConfig" => [
+                "executionType" => "parallel",
+                "idDataIndex" => ""
+            ],
+            "mappingConfig" => [
+
+            ],
+            "executionConfig" => [
+                "cronDefinition" => ""
+            ],
+            "workspaces" => [
+
+            ]
+        ],
+        "JP_channel3" => [
+            "general" => [
+                "active" => TRUE,
+                "type" => "dataImporterDataObject",
+                "name" => "JP_channel3",
+                "description" => "",
+                "path" => NULL
+            ],
+            "loaderConfig" => [
+                "type" => "upload",
+                "settings" => [
+                    "uploadFilePath" => "JP_channel3/upload.import"
+                ]
+            ],
+            "interpreterConfig" => [
+                "type" => "csv",
+                "settings" => [
+                    "skipFirstRow" => TRUE,
+                    "delimiter" => ",",
+                    "enclosure" => "\"",
+                    "escape" => "\\"
+                ]
+            ],
+            "resolverConfig" => [
+                "elementType" => "dataObject",
+                "dataObjectClassId" => "1",
+                "loadingStrategy" => [
+                    "type" => "notLoad"
+                ],
+                "createLocationStrategy" => [
+                    "type" => "staticPath",
+                    "settings" => [
+                        "path" => "/"
+                    ]
+                ],
+                "locationUpdateStrategy" => [
+                    "type" => "noChange"
+                ],
+                "publishingStrategy" => [
+                    "type" => "noChangeUnpublishNew"
+                ]
+            ],
+            "processingConfig" => [
+                "executionType" => "parallel",
+                "idDataIndex" => ""
+            ],
+            "mappingConfig" => [
+
+            ],
+            "executionConfig" => [
+                "cronDefinition" => ""
+            ],
+            "workspaces" => [
+
+            ]
         ]
     ]
 ];
