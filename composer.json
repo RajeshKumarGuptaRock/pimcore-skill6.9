@@ -12,6 +12,7 @@
   "require": {
     "php": ">=7.2",
     "pimcore/data-hub": "~1.0.11",
+    "pimcore/data-importer":"~1.2.1",
     "pimcore/pimcore": "~6.9.0"
   },
   "require-dev": {
