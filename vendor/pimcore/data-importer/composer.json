@@ -1,0 +1,32 @@
+{
+  "name": "pimcore/data-importer",
+  "license": "GPL-3.0+",
+  "type": "pimcore-bundle",
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": ">=7.4",
+    "pimcore/pimcore": "^6.8 || ^10.0",
+    "pimcore/data-hub": "^0.7 || ^1.0",
+    "phpoffice/phpspreadsheet": "^1.1",
+    "dragonmantank/cron-expression": "^3.1",
+    "league/flysystem": "^2.0",
+    "league/flysystem-sftp": "^2.0",
+    "league/flysystem-bundle" : "^2.0",
+    "ext-json": "*",
+    "ext-fileinfo": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pimcore\\Bundle\\DataImporterBundle\\": "src/"
+    }
+  },
+  "extra": {
+    "pimcore": {
+      "bundles": [
+        "Pimcore\\Bundle\\DataImporterBundle\\PimcoreDataImporterBundle"
+      ]
+    }
+  }
+}

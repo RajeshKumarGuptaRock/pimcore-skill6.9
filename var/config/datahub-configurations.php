@@ -5,6 +5,62 @@ return [
 
     ],
     "list" => [
+        "JP_about" => [
+            "general" => [
+                "active" => TRUE,
+                "type" => "dataImporterDataObject",
+                "name" => "JP_about",
+                "description" => "",
+                "path" => NULL
+            ],
+            "loaderConfig" => [
+                "type" => "upload",
+                "settings" => [
+                    "uploadFilePath" => "JP_about/upload.import"
+                ]
+            ],
+            "interpreterConfig" => [
+                "type" => "csv",
+                "settings" => [
+                    "skipFirstRow" => TRUE,
+                    "delimiter" => ",",
+                    "enclosure" => "\"",
+                    "escape" => "\\"
+                ]
+            ],
+            "resolverConfig" => [
+                "elementType" => "dataObject",
+                "dataObjectClassId" => "1",
+                "loadingStrategy" => [
+                    "type" => "notLoad"
+                ],
+                "createLocationStrategy" => [
+                    "type" => "staticPath",
+                    "settings" => [
+                        "path" => "/"
+                    ]
+                ],
+                "locationUpdateStrategy" => [
+                    "type" => "noChange"
+                ],
+                "publishingStrategy" => [
+                    "type" => "noChangeUnpublishNew"
+                ]
+            ],
+            "processingConfig" => [
+                "executionType" => "parallel",
+                "idDataIndex" => ""
+            ],
+            "mappingConfig" => [
+
+            ],
+            "executionConfig" => [
+                "cronDefinition" => ""
+            ],
+            "workspaces" => [
+
+            ]
+        ],
         "Jp_channel1" => [
             "general" => [
                 "active" => TRUE,
@@ -176,18 +232,18 @@ return [
 
             ]
         ],
-        "JP_about" => [
+        "AP_about" => [
             "general" => [
                 "active" => TRUE,
                 "type" => "dataImporterDataObject",
-                "name" => "JP_about",
+                "name" => "AP_about",
                 "description" => "",
                 "path" => NULL
             ],
             "loaderConfig" => [
                 "type" => "upload",
                 "settings" => [
-                    "uploadFilePath" => "JP_about/upload.import"
+                    "uploadFilePath" => "AP_about/upload.import"
                 ]
             ],
             "interpreterConfig" => [
@@ -232,11 +288,57 @@ return [
 
             ]
         ],
-        "test" => [
+        "BP_about" => [
             "general" => [
+                "active" => TRUE,
                 "type" => "dataImporterDataObject",
-                "path" => NULL,
-                "name" => "test"
+                "name" => "BP_about",
+                "description" => "",
+                "path" => NULL
+            ],
+            "loaderConfig" => [
+                "type" => "upload",
+                "settings" => [
+                    "uploadFilePath" => "BP_about/upload.import"
+                ]
+            ],
+            "interpreterConfig" => [
+                "type" => "csv",
+                "settings" => [
+                    "skipFirstRow" => TRUE,
+                    "delimiter" => ",",
+                    "enclosure" => "\"",
+                    "escape" => "\\"
+                ]
+            ],
+            "resolverConfig" => [
+                "elementType" => "dataObject",
+                "dataObjectClassId" => "1",
+                "loadingStrategy" => [
+                    "type" => "notLoad"
+                ],
+                "createLocationStrategy" => [
+                    "type" => "staticPath",
+                    "settings" => [
+                        "path" => "/"
+                    ]
+                ],
+                "locationUpdateStrategy" => [
+                    "type" => "noChange"
+                ],
+                "publishingStrategy" => [
+                    "type" => "noChangeUnpublishNew"
+                ]
+            ],
+            "processingConfig" => [
+                "executionType" => "parallel",
+                "idDataIndex" => ""
+            ],
+            "mappingConfig" => [
+
+            ],
+            "executionConfig" => [
+                "cronDefinition" => ""
             ],
             "workspaces" => [
 

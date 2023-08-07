@@ -45,7 +45,7 @@
 /.php_cs.cache
 
 # composer
-/vendor/
+
 
 # PhpStorm / IDEA
 .idea
